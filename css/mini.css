@@ -1,0 +1,14 @@
+.mini{
+    position: relative;
+    z-index: 10;
+    display: none;
+    width: 60px;
+    height: 100%;
+}
+.mini span{
+    display: inline-block;
+    width: 100%;
+    height: 8px;
+    background: #f00;
+    margin-bottom: 5px;
+}

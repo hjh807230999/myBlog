@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+@media screen and (min-width: 460px) and (max-width: 800px) {
+    .blogRight{
+        width: 450px;
+    }
+    #mainBlog{
+        width: 100%;
+        display: block;
+        text-align: center;
+        /*flex-wrap: wrap;*/
+    }
+    .blogLeft{
+        display: inline-block;
+        width: 404px;
+    }
+    .blogRight{
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .blogRight ul{
+        display: inline-block;
+    }
+    .topRight{
+        display: none;
+    }
+    .mini{
+        display: block;
+    }
+    #blog-topNav .topNavMsg{
+        width: 100%;
+    }
+}

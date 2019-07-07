@@ -1,0 +1,110 @@
+#mainBlog{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 1282px;
+    margin:60px auto 0;
+    padding-top: 20px;
+}
+
+.blogLeft{
+    width: 28.4%;
+}
+.aboutMy{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 230px;
+    padding: 20px 0;
+    background: #fff;
+}
+.aboutMy .myImg{
+    width: 130px;
+    height: 130px;
+}
+.aboutMy .myImg img{
+    width: 110px;
+    border: 10px solid rgba(99,196,218,.25);
+    border-radius:50%;
+}
+.aboutMy .myImg img:hover{
+    border-color:skyblue;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,.3);
+}
+.aboutMy > p{
+    width: 100%;
+    font-size: 24px;
+    color: #999;
+    text-align: center;
+}
+.myBtn span{
+    display: inline-block;
+    width: 88px;
+    height: 30px;
+    border-radius:25px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.myBtn span:nth-child(1){
+    background: #01bcff;
+    margin-right: 30px;
+}
+.myBtn span:nth-child(2){
+    background: #1bb556;
+}
+
+
+.blog-notice{
+    width: 100%;
+    background: #fff;
+    margin-top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.blog-notice p{
+    text-indent: 2em;
+    margin-top: 10px;
+    color: #888;
+    font-size: 14px;
+}
+
+
+.newArticle,.friendLink{
+    width: 100%;
+    background: #fff;
+    margin-top: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.newArticle ul,.friendLink ul{
+    padding-left: 40px;
+}
+.newArticle li,.friendLink li{
+    width: calc( 100% - 50px );
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    margin: 6px 0;
+    padding-bottom: 5px;
+    color: #888;
+    font-size: 14px;
+}
+.linkTop{
+    display: flex;
+    justify-content: space-between;
+}
+.linkTop > span{
+    color: #888;
+}
+
+
+/*设置统一的边框*/
+.aboutMy,
+.blog-notice,
+.newArticle,
+.friendLink{
+    border-radius:5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.15);
+}

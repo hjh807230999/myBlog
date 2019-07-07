@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tittle</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/topnav.css">
+    <link rel="stylesheet" href="../fontcss/font/iconfont.css">
+
+    <link rel="stylesheet" href="../css/detailsMain.css">
+</head>
+<body>
+<div id="myBlog">
+    <div id="blog-topNav">
+        <div class="topNavMsg">
+            <div class="topLeft">
+                <div class="topImg">
+                    <img width="100%" height="100%" src="../img/1.png" alt="">
+                </div>
+                <p>Mr Hu</p>
+            </div>
+            <div class="topRight">
+                <ul class="topList">
+                    <li class="active"><a href="../index.html">博客首页</a></li>
+                    <li><a href="#">关于我</a></li>
+                    <li><a href="#">博客日记</a></li>
+                    <li><a href="#">学无止境</a></li>
+                    <li><a href="#">学习经验</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="detailsMain">
+        <div class="main-left">
+            <div class="leftMsg">
+                <h2>作者</h2>
+                <div class="bor">
+                    <div class="icon">
+                        <img width="40" src="../img/2.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Mr Hu</p>
+                        <p>感谢你的陪伴，让我们一同奔跑</p>
+                    </div>
+                </div>
+            </div>
+            <div class="leftMsg">
+                <h2>本页导航</h2>
+                <div class="bor page">
+                    <p>感谢你的陪伴，让我们一同奔跑感谢你的陪伴，让我们一同奔跑感谢你的陪伴，让我们一同奔跑感谢你的陪伴，让我们一同奔跑感谢你的陪伴，让我们一同奔跑</p>
+                </div>
+            </div>
+            <div class="leftMsg">
+                <h2>核心内容</h2>
+                <div class="bor page">
+                    <p>感谢你的陪伴，让我们一同奔跑感谢你的陪伴，让我们一同奔跑感谢你的陪伴，让我们一同奔跑感谢你的陪伴，让我们一同奔跑感谢你的陪伴，让我们一同奔跑</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-right">
+            <div class="rightTop">
+                <h2>
+                    javascript小技巧
+                </h2>
+                <p>Jack 发表于: <i class="iconfont icon-shijian"></i>2019-07-07 17:46:28</p>
+            </div>
+            <div class="rtIcon">
+                <img src="../img/2.png" alt="">
+            </div>
+            <div class="content">
+                <ul>
+                    <li>
+                        <h2>1.JavaScript 中 [object Object] 的含义是什么？</h2>
+                        <p>“[object Object]” 是最常见的 JavaScript “怪癖”之一。几乎每个 JavaScript 实例都有一个名为 <span>toString()</span> 的方法，有些方法是由<span>Object.prototype.toString</span>  提供的。
+                            某些类型（如数组）实现了 <span>toString()</span> 的自定义版本，以便在调用方法时将值转换为字符串。例如<span>Array.prototype.toString</span>  会覆盖<span>Object.toString()</span> （也称为 method shadowing）。
+                            但是当你在普通的 JavaScript 对象上调用 <span>toString()</span> 时，引擎会给出“[object Object]”，因为 Object.toString() 的默认行为是由实体类型（在这种情况下为Object）返回字符串 <span>object</span> 。</p>
+                    </li>
+                    <li>
+                        <h2>2. 七种数据类型</h2>
+                        <p>JavaScript 中有七个构建块，即 String，Number，Boolean，Null，Undefined，Object 和 Symbol。这些类型被称为基元。</p>
+                    </li>
+                    <li>
+                        <h2>3.强制类型转化</h2>
+                        <ul>
+                            <li>Boolean(value)——把给定的值转换成Boolean型；</li>
+                            <li>Number(value)——把给定的值转换成数字（可以是整数或浮点数）；</li>
+                            <li>String(value)——把给定的值转换成字符串。</li>
+                            <li>可以用下面的代码段测试Boolean型的强制类型转换。</li>
+                            <li>Boolean(""); //false – empty string</li>
+                            <li>Boolean("hi"); //true – non-empty string</li>
+                            <li>Boolean(100); //true – non-zero number</li>
+                            <li>Boolean(null); //false - null</li>
+                            <li>Boolean(0); //false - zero</li>
+                            <li>Boolean(new Object()); //true – objec</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>4. 转换函数</h2>
+                        <p>js提供了parseInt()和parseFloat()两个转换函数。前者把值转换成整数，后者把值转换成浮点数。只有对String类型调用这些方法，这两个函数才能正确运行；对其他类型返回的都是NaN(Not a Number)。</p>
+                        <ul>
+                            <li>parseInt("1234blue"); //returns 1234</li>
+                            <li>parseInt("0xA"); //returns 10</li>
+                            <li>parseInt("22.5"); //returns 22</li>
+                            <li>parseInt("blue"); //returns NaN</li>
+                        </ul>
+                        <p>parseInt()方法还有基模式，可以把二进制、八进制、十六进制或其他任何进制的字符串转换成整数。基是由parseInt()方法的第二个参数指定的，示例如下：</p>
+                        <ul>
+                            <li>parseInt("AF", 16); //returns 175</li>
+                            <li>parseInt("10", 2); //returns 2</li>
+                            <li>parseInt("10", 8); //returns 8</li>
+                            <li>parseInt("10", 10); //returns 10</li>
+                        </ul>
+                        <p> 如果十进制数包含前导0，那么最好采用基数10，这样才不会意外地得到八进制的值。例如：</p>
+                        <ul>
+                            <li>parseInt("010"); //returns 8</li>
+                            <li>parseInt("010", 8); //returns 8</li>
+                            <li>parseInt("010", 10); //returns 10</li>
+                        </ul>
+                        <p>使用parseFloat()方法的另一不同之处在于，字符串必须以十进制形式表示浮点数，parseFloat()没有基模式。</p>
+                        <ul>
+                            <li>parseFloat("1234blue"); //returns 1234.0</li>
+                            <li>parseFloat("0xA"); //returns NaN</li>
+                            <li>parseFloat("22.5"); //returns 22.5</li>
+                            <li>parseFloat("22.34.5"); //returns 22.34</li>
+                            <li>parseFloat("0908"); //returns 908</li>
+                            <li>parseFloat("blue"); //returns NaN</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/topnav.js"></script>
+<script src="../js/gundongtiao.js"></script>
+</body>
+</html>

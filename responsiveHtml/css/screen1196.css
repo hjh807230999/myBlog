@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+@media screen and (min-width: 800px) and  (max-width: 1180px) {
+    .blogRight{
+        width: 450px;
+    }
+    #mainBlog{
+        width: 100%;
+        justify-content: space-around;
+    }
+    #blog-topNav .topNavMsg{
+        width: 100%;
+    }
+}

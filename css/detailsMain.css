@@ -1,0 +1,85 @@
+#detailsMain{
+    display: flex;
+    justify-content: space-between;
+    width: 1282px;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding-top: 20px;
+}
+.main-left{
+    width: 300px;
+    padding: 10px;
+    background: #f8f8f8;
+    border-radius:5px;
+}
+.bor{
+    display: flex;
+    border: 1px solid #ccc;
+}
+.leftMsg h2{
+    margin-bottom: 10px;
+}
+.bor .icon img{
+    border-radius:50%;
+    margin-right: 10px;
+}
+.page p{
+    text-indent: 2em;
+}
+.main-left > div{
+    margin-bottom: 10px;
+}
+
+.main-right{
+    width: 940px;
+    padding: 0 20px;
+    background: #fff;
+    box-sizing:border-box;
+}
+.icon-shijian{
+    color: #f00;
+    margin-right: 5px;
+}
+.rightTop{
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.rightTop h2{
+    line-height: 80px;
+}
+.rightTop p{
+    font-size: 18px;
+    color: #888;
+}
+.rtIcon{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.content li{
+    margin-bottom: 10px;
+}
+.content li span{
+    color: rgb(233, 105, 0);
+    font-weight: bold;
+}
+.content li p{
+    padding: 10px;
+    background: #aed9f3;
+    margin-top: 10px;
+    text-indent: 2em;
+    font-size: 18px;
+}
+.content li > ul{
+    margin-top: 10px;
+}
+.content li p ~ p{
+    margin-top: 20px;
+}
+.content li > ul > li{
+    color: rgba(0,0,0,.5);
+    font-weight: bold;
+}
