@@ -12,7 +12,8 @@
     }
     .blogLeft{
         display: inline-block;
-        width: 404px;
+        /*width: 404px;*/
+        width: 100%;
     }
     .blogRight{
         width: 100%;
@@ -29,6 +30,9 @@
         display: none;
     }
     #blog-topNav .topNavMsg{
+        width: 100%;
+    }
+    .blogRight li{
         width: 100%;
     }
 }
