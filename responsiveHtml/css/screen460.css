@@ -13,10 +13,11 @@
     .blogLeft{
         display: inline-block;
         /*width: 404px;*/
-        width: 80%;
+        width: 90%;
     }
     .blogRight{
-        width: 100%;
+        width: 90%;
+        display: inline-block;
         text-align: center;
         margin-top: 40px;
     }
@@ -33,7 +34,7 @@
         width: 100%;
     }
     .blogRight ul{
-        width: 300px;
+        width: 100%;
     }
     .blogRight li{
         width: 100%;
