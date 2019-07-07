@@ -13,7 +13,7 @@
     .blogLeft{
         display: inline-block;
         /*width: 404px;*/
-        width: 100%;
+        width: 80%;
     }
     .blogRight{
         width: 100%;
@@ -32,7 +32,13 @@
     #blog-topNav .topNavMsg{
         width: 100%;
     }
+    .blogRight ul{
+        width: 80%;
+    }
     .blogRight li{
+        width: 100%;
+    }
+    .rightIcon img{
         width: 100%;
     }
 }
